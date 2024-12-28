@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading App</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to the Stock Trading App</h1>
+            <p>Your gateway to smarter investing.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Your Portfolio</h2>
+            <div id="portfolio-summary">
+                <!-- Portfolio data will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="market">
+            <h2>Market Overview</h2>
+            <div id="market-data">
+                <!-- Market data will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="account">
+            <h2>Your Account</h2>
+            <form id="account-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stock Trading App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
