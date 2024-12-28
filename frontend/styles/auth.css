@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #005bb5, #0078d4);
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a.active {
+    color: #ffd700;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.auth-box {
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-box h1 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box label {
+    text-align: left;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.auth-box input {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.auth-box button {
+    background-color: #005bb5;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-box button:hover {
+    background-color: #003f7f;
+}
+
+.auth-box p {
+    margin-top: 1em;
+    color: #333;
+}
