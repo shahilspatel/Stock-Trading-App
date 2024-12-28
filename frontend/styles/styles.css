@@ -13,9 +13,12 @@ body {
 header {
     background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Bold red-pink gradient */
     color: white;
-    padding: 1.5em 0;
+    padding: 1.2em 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Navigation */
@@ -28,27 +31,35 @@ nav ul {
     gap: 2em;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     text-decoration: none;
     color: #e4e4e4;
     font-size: 1.2em;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
     color: #ffdb58; /* Bright yellow on hover */
+    transform: scale(1.1);
+}
+
+#logout-button {
+    margin-left: auto;
 }
 
 /* Main Content */
 main {
     padding: 2em;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 2em auto;
     background: #2a2a42; /* Dark background for the content */
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
 }
 
 /* Section styles */
@@ -78,10 +89,6 @@ footer {
     color: #e4e4e4;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 2em;
     font-size: 0.9em;
 }
 
@@ -156,3 +163,44 @@ button:hover {
     color: #e4e4e4; /* Light text for details */
 }
 
+/* Forms */
+form {
+    background-color: #2a2a42; /* Match the main content background */
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form label {
+    font-size: 1em;
+    color: #ffdb58; /* Bright label color */
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.7em;
+    border: none;
+    border-radius: 8px;
+    background-color: #3a3a52; /* Slightly lighter input field background */
+    color: #e4e4e4; /* Match text color */
+    font-size: 1em;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff4b2b;
+}
+
+/* Links */
+a {
+    color: #ffdb58;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4b2b;
+}
